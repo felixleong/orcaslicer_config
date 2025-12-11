@@ -1,0 +1,35 @@
+{
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_num]:: [layer_z]mm\n\n; If the print height is above 150mm, we want to issue a warning\n; 20231025 - have to exist here because `max_layer_z` is not supported in Start Gcode\n{if layer_num == 0 and max_layer_z > 120}M291 P\"Tall print detected and needs additional physical setup. Press CANCEL to quit.\" R\"!! WARNING !!\" S3{endif}\n\n; Initial\nG92 E0.0",
+    "from": "User",
+    "gcode_flavor": "reprapfirmware",
+    "host_type": "duet",
+    "inherits": "Prusa MK3S 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "G4 ; wait\n\nM221 S100 ; reset flow\nM572 D0 S0.0 ; reset pressure advance\n\n{if print_settings_id=~/.*(DETAIL @MK3|QUALITY @MK3|@0.25 nozzle MK3).*/}M907 E538 ; reset extruder motor current{endif}\n\nM104 S0 ; turn off temperature\nM140 S0 ; turn off heatbed\nM107 ; turn off fan\nM144 ; Set bed to standby\n\n{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+10, max_print_height)}{endif} ; Move print head up\nG1 X10 Y210 F1500 ; home X axis\nM84 ; disable motors\n\n; Beep twice\nM300 S1700 P1000\nG4 P2000\nM300 S1700 P1000\nG4 P2000",
+    "machine_max_jerk_x": [
+        "8",
+        "9"
+    ],
+    "machine_max_jerk_y": [
+        "8",
+        "9"
+    ],
+    "machine_start_gcode": "; Initialize\nG90 ; use absolute coordinates\nM83 ; extruder relative mode\n\nM109 S180                           ; heat up the nozzle first (to warm up the PINDA)\nG1 E-0.5 F4800                      ; retract filament quickly\n\nG28 ; Home\nM190 S[first_layer_bed_temperature] ; wait for bed temp\nM109 S[first_layer_temperature]     ; wait for extruder temp\n\n; Beep\nM300 S1200 P1500\nG4 P3000\n\nG30 ; Rehome Z\nG29 S0 ; mesh bed leveling\n\nG1 X30.0 Y0.0 F2500 ; go outside print area\nG1 Z0.2 F720\nG92 E0\nG1 E12 F300; Blob\nG1 X70 E5 F1000; Intro line\nG92 E0",
+    "max_layer_height": [
+        "0.42"
+    ],
+    "name": "Prusa MK3S 0.6 nozzle",
+    "nozzle_diameter": [
+        "0.6"
+    ],
+    "nozzle_type": "brass",
+    "print_host": "192.168.0.202",
+    "printable_height": "150",
+    "printer_settings_id": "Prusa MK3S 0.6 nozzle",
+    "template_custom_gcode": "; Uncomment for utilities\n; =======================\n; # Intentionally slow down the speed for the first few layers, dropping it after we hit 1.8mm\n;\n;{if layer_num > 1 and layer_z <= 1.2}M220 S85{elsif layer_z <= 1.8}M220 S100{endif}\n\n; # Tower Calibration\n;\n; 0.2mm layer, 8 bands 5mm each, total height 40mm\n;\n; M572 D0 S<pa value> - pressure advance\n; M207 F<speed mm/min - 2400> S<retract length> Z<retract lift>\n;{if layer_num== 1}M207 F2400 S0.00 Z0.4\n;{elsif layer_num== 25 }M207 F1800 S0.30 Z0.4\n;{elsif layer_num== 50 }M207 F2400 S0.30 Z0.4 \n;{elsif layer_num== 75 }M207 F3000 S0.30 Z0.4\n;{elsif layer_num== 100}M207 F3600 S0.30 Z0.4\n;{elsif layer_num== 125}M207 F4200 S0.30 Z0.4\n;{elsif layer_num== 150}M207 F4800 S0.30 Z0.4\n;{elsif layer_num== 175}M207 F5400 S0.30 Z0.4\n;{endif}",
+    "use_firmware_retraction": "1",
+    "version": "1.8.0.0",
+    "wipe": [
+        "0"
+    ]
+}

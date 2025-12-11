@@ -1,0 +1,243 @@
+{
+    "adaptive_bed_mesh_margin": "0",
+    "auxiliary_fan": "0",
+    "bbl_use_printhost": "0",
+    "bed_custom_model": "C:\\\\Program Files\\\\OrcaSlicer\\\\resources\\\\profiles\\\\Prusa\\\\mk3_bed.stl",
+    "bed_custom_texture": "C:\\\\Program Files\\\\OrcaSlicer\\\\resources\\\\profiles\\\\Prusa\\\\mk3.5.svg",
+    "bed_exclude_area": [
+        "5x0"
+    ],
+    "bed_mesh_max": "99999,99999",
+    "bed_mesh_min": "-99999,-99999",
+    "bed_mesh_probe_distance": "50,50",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE - [layer_z]mm\nG92 E0",
+    "best_object_pos": "0.5,0.5",
+    "change_extrusion_role_gcode": "",
+    "change_filament_gcode": "M600",
+    "cooling_tube_length": "5",
+    "cooling_tube_retraction": "91.5",
+    "default_bed_type": "",
+    "default_filament_profile": [],
+    "default_print_profile": "",
+    "deretraction_speed": [
+        "0"
+    ],
+    "disable_m73": "0",
+    "emit_machine_limits_to_gcode": "1",
+    "enable_filament_ramming": "1",
+    "enable_long_retraction_when_cut": "0",
+    "extra_loading_move": "-2",
+    "extruder_clearance_height_to_lid": "120",
+    "extruder_clearance_height_to_rod": "40",
+    "extruder_clearance_radius": "40",
+    "extruder_colour": [
+        ""
+    ],
+    "extruder_offset": [
+        "0x0"
+    ],
+    "fan_kickstart": "0",
+    "fan_speedup_overhangs": "1",
+    "fan_speedup_time": "0",
+    "from": "User",
+    "gcode_flavor": "reprapfirmware",
+    "head_wrap_detect_zone": [],
+    "high_current_on_filament_swap": "0",
+    "host_type": "duet",
+    "inherits": "",
+    "is_custom_defined": "0",
+    "layer_change_gcode": ";AFTER_LAYER_CHANGE - [layer_num]::[layer_z]",
+    "long_retractions_when_cut": [
+        "0"
+    ],
+    "machine_end_gcode": "; Move away and park\n{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+1, max_print_height)} F720  ; Move print head up{endif}\nG1 X0 Y0 F3600                                                                                  ; park\n{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+20, max_print_height)} F720 ; Move print head further up{endif}\n\nG4                                                                                           ; wait\nM220 S100                                                                                    ; reset speed factor\nM221 S100                                                                                    ; reset flow\nM572 D0 S0.0                                                                                 ; reset pressure advance\nM290 R0 S0                                                                                   ; reset babystep\n\n{if print_settings_id=~/.*(DETAIL @MK3S|QUALITY @MK3S|@0.25 nozzle MK3).*/}M907 E538         ; reset extruder motor current{endif}\n\nM104 S0                                                                                      ; turn off temperature\nM107                                                                                         ; turn off fan\n\n; Heatbed cooling notification service\nM140 S43                                                                                     ; turn off heatbed\nM116 H0 S2                                                                                   ; Wait for the bed to hit 45-50C\nM140 S0                                                                                      ; Turn off heatbed\nM144                                                                                         ; Set bed to standy\n\n; Beep twice\nM300 S1500 P1500\nG4 P2500\nM300 S1500 P1500\n\n; Bring the heat plate forward\nG1 Y210 F3600\n\nM84                                                                                          ; disable motors\n; max_layer_z = [max_layer_z]",
+    "machine_load_filament_time": "0",
+    "machine_max_acceleration_e": [
+        "5000",
+        "5000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "1500",
+        "2000"
+    ],
+    "machine_max_acceleration_retracting": [
+        "1500",
+        "1250"
+    ],
+    "machine_max_acceleration_travel": [
+        "2000",
+        "3000"
+    ],
+    "machine_max_acceleration_x": [
+        "1000",
+        "1000"
+    ],
+    "machine_max_acceleration_y": [
+        "1000",
+        "1000"
+    ],
+    "machine_max_acceleration_z": [
+        "500",
+        "200"
+    ],
+    "machine_max_jerk_e": [
+        "2.5",
+        "2.5"
+    ],
+    "machine_max_jerk_x": [
+        "10",
+        "10"
+    ],
+    "machine_max_jerk_y": [
+        "10",
+        "10"
+    ],
+    "machine_max_jerk_z": [
+        "0.2",
+        "0.4"
+    ],
+    "machine_max_junction_deviation": [
+        "0",
+        "0"
+    ],
+    "machine_max_speed_e": [
+        "120",
+        "120"
+    ],
+    "machine_max_speed_x": [
+        "500",
+        "200"
+    ],
+    "machine_max_speed_y": [
+        "500",
+        "200"
+    ],
+    "machine_max_speed_z": [
+        "12",
+        "12"
+    ],
+    "machine_min_extruding_rate": [
+        "0",
+        "0"
+    ],
+    "machine_min_travel_rate": [
+        "0",
+        "0"
+    ],
+    "machine_pause_gcode": "M600",
+    "machine_start_gcode": "G90                                                     ; use absolute coordinates\nM83                                                     ; extruder relative mode\n\n; First phase heating routine - Stabilize heating conditions for stable bed probing\nM109 S160                                               ; heat up the nozzle first (to warm up PINDA gently & filament retraction)\nM190 S55                                                ; heat up bed to 60C to have it hot enough for the probing sequence (that can keep its temp between each probe)\n\n; Bed probing routine\nG28                                                     ; Home printer\nM557 X{max(25, min(85, first_layer_print_min[0] - 20))}:{min(245, max(165, first_layer_print_max[0] + 20))} Y{max(4, min(70, first_layer_print_min[1] - 20))}:{min(205, max(140, first_layer_print_max[1] + 20))} P3:3\nG32                                                     ; Probe bed (/sys/bed.g)\n\n; Preparing to start print\nG1 X100 Y-2 F10000                                     ; Go roughly where the intro line is going to go\nM109 S[first_layer_temperature]                         ; wait for extruder temp\nM190 S[first_layer_bed_temperature]                     ; wait for bed temp\nM582 T8                                                 ; double check to make sure filament is loaded\n\nM300 S1200 P1200                                         ; Beep to inform that print is starting\nG92 E0\nG1 Z0.6 F720                                            ; Hover 0.6mm above bed\nG4 S10                                                   ; Pause for 15 sec (additional buffer time to inspect Z height + buffer to let heater settle)\n\n; Intro line\nG1 Z[first_layer_height] F720\nG1 E12 F1000                                            ; Blob\nG1 X150 E4 F1000                                         ; Intro line\nG92 E0",
+    "machine_tool_change_time": "0",
+    "machine_unload_filament_time": "0",
+    "manual_filament_change": "1",
+    "max_layer_height": [
+        "0.48"
+    ],
+    "max_resonance_avoidance_speed": "120",
+    "min_layer_height": [
+        "0.07"
+    ],
+    "min_resonance_avoidance_speed": "70",
+    "name": "Prusa MK2X Duet 0.6 nozzle",
+    "nozzle_diameter": [
+        "0.4"
+    ],
+    "nozzle_height": "2.5",
+    "nozzle_hrc": "0",
+    "nozzle_type": "brass",
+    "nozzle_volume": "0",
+    "parking_pos_retraction": "92",
+    "pellet_modded_printer": "0",
+    "preferred_orientation": "0",
+    "print_host": "192.168.0.202",
+    "print_host_webui": "",
+    "printable_area": [
+        "0x0",
+        "250x0",
+        "250x210",
+        "0x210"
+    ],
+    "printable_height": "200",
+    "printer_model": "",
+    "printer_notes": "",
+    "printer_settings_id": "Prusa MK2X Duet 0.6 nozzle",
+    "printer_structure": "undefine",
+    "printer_technology": "FFF",
+    "printer_variant": "",
+    "printhost_apikey": "",
+    "printhost_authorization_type": "key",
+    "printhost_cafile": "",
+    "printhost_password": "",
+    "printhost_port": "",
+    "printhost_ssl_ignore_revoke": "0",
+    "printhost_user": "",
+    "printing_by_object_gcode": "",
+    "purge_in_prime_tower": "1",
+    "resonance_avoidance": "0",
+    "retract_before_wipe": [
+        "100%"
+    ],
+    "retract_length_toolchange": [
+        "10"
+    ],
+    "retract_lift_above": [
+        "0"
+    ],
+    "retract_lift_below": [
+        "0"
+    ],
+    "retract_lift_enforce": [
+        "All Surfaces"
+    ],
+    "retract_restart_extra": [
+        "0"
+    ],
+    "retract_restart_extra_toolchange": [
+        "0"
+    ],
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "retraction_distances_when_cut": [
+        "18"
+    ],
+    "retraction_length": [
+        "0.35"
+    ],
+    "retraction_minimum_travel": [
+        "6"
+    ],
+    "retraction_speed": [
+        "30"
+    ],
+    "scan_first_layer": "0",
+    "silent_mode": "0",
+    "single_extruder_multi_material": "1",
+    "support_air_filtration": "1",
+    "support_chamber_temp_control": "1",
+    "support_multi_bed_types": "1",
+    "template_custom_gcode": "",
+    "thumbnails": "48x48/PNG, 300x300/PNG",
+    "thumbnails_format": "PNG",
+    "time_cost": "0.103",
+    "time_lapse_gcode": "",
+    "travel_slope": [
+        "3"
+    ],
+    "upward_compatible_machine": [],
+    "use_firmware_retraction": "0",
+    "use_relative_e_distances": "1",
+    "version": "2.0.2.0",
+    "wipe": [
+        "0"
+    ],
+    "wipe_distance": [
+        "1"
+    ],
+    "z_hop": [
+        "0.3"
+    ],
+    "z_hop_types": [
+        "Auto Lift"
+    ],
+    "z_offset": "0"
+}

@@ -1,0 +1,37 @@
+{
+    "default_filament_colour": [
+        "#FFFFFF"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "filament_flow_ratio": [
+        "1.02"
+    ],
+    "filament_max_volumetric_speed": [
+        "4.5"
+    ],
+    "filament_settings_id": [
+        "Magma TPU"
+    ],
+    "filament_vendor": [
+        "Magma"
+    ],
+    "from": "User",
+    "inherits": "Generic TPU @System",
+    "is_custom_defined": "0",
+    "name": "Magma TPU",
+    "nozzle_temperature": [
+        "190"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "190"
+    ],
+    "pressure_advance": [
+        "0.054"
+    ],
+    "slow_down_layer_time": [
+        "1"
+    ],
+    "version": "2.3.1.10"
+}
