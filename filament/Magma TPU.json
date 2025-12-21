@@ -1,9 +1,21 @@
 {
+    "cool_plate_temp": [
+        "40"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "40"
+    ],
     "default_filament_colour": [
         "#FFFFFF"
     ],
     "enable_pressure_advance": [
         "1"
+    ],
+    "eng_plate_temp": [
+        "40"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "40"
     ],
     "filament_flow_ratio": [
         "1.02"
@@ -18,6 +30,12 @@
         "Magma"
     ],
     "from": "User",
+    "hot_plate_temp": [
+        "50"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "50"
+    ],
     "inherits": "Generic TPU @System",
     "is_custom_defined": "0",
     "name": "Magma TPU",
@@ -32,6 +50,12 @@
     ],
     "slow_down_layer_time": [
         "1"
+    ],
+    "textured_plate_temp": [
+        "50"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "50"
     ],
     "version": "2.3.1.10"
 }

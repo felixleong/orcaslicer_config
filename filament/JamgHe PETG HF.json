@@ -34,7 +34,7 @@
         "70"
     ],
     "cool_plate_temp": [
-        "70"
+        "65"
     ],
     "cool_plate_temp_initial_layer": [
         "65"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "20"
+        "12"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -212,7 +212,7 @@
         "0"
     ],
     "hot_plate_temp": [
-        "85"
+        "75"
     ],
     "hot_plate_temp_initial_layer": [
         "75"
@@ -269,7 +269,7 @@
         "10"
     ],
     "supertack_plate_temp": [
-        "70"
+        "65"
     ],
     "supertack_plate_temp_initial_layer": [
         "65"
@@ -281,13 +281,13 @@
         "70"
     ],
     "textured_cool_plate_temp": [
-        "70"
+        "65"
     ],
     "textured_cool_plate_temp_initial_layer": [
         "65"
     ],
     "textured_plate_temp": [
-        "85"
+        "75"
     ],
     "textured_plate_temp_initial_layer": [
         "75"

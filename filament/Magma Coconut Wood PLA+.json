@@ -34,10 +34,10 @@
         "70"
     ],
     "cool_plate_temp": [
-        "55"
+        "40"
     ],
     "cool_plate_temp_initial_layer": [
-        "55"
+        "40"
     ],
     "default_filament_colour": [
         "#DDBC91"
@@ -269,10 +269,10 @@
         "10"
     ],
     "supertack_plate_temp": [
-        "0"
+        "40"
     ],
     "supertack_plate_temp_initial_layer": [
-        "0"
+        "40"
     ],
     "support_material_interface_fan_speed": [
         "-1"
@@ -281,10 +281,10 @@
         "45"
     ],
     "textured_cool_plate_temp": [
-        "55"
+        "40"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "55"
+        "40"
     ],
     "textured_plate_temp": [
         "60"

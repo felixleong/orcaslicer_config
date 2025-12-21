@@ -34,10 +34,10 @@
         "70"
     ],
     "cool_plate_temp": [
-        "45"
+        "40"
     ],
     "cool_plate_temp_initial_layer": [
-        "45"
+        "40"
     ],
     "default_filament_colour": [
         "#80FF80"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "16"
+        "8"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -281,7 +281,7 @@
         "45"
     ],
     "textured_cool_plate_temp": [
-        "45"
+        "40"
     ],
     "textured_cool_plate_temp_initial_layer": [
         "40"

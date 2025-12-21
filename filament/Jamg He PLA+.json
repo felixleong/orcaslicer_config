@@ -34,10 +34,10 @@
         "70"
     ],
     "cool_plate_temp": [
-        "45"
+        "40"
     ],
     "cool_plate_temp_initial_layer": [
-        "45"
+        "40"
     ],
     "default_filament_colour": [
         "#80FF80"
@@ -58,7 +58,7 @@
         "40"
     ],
     "eng_plate_temp_initial_layer": [
-        "0"
+        "40"
     ],
     "fan_cooling_layer_time": [
         "100"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.032"
+        "0.03"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
@@ -281,10 +281,10 @@
         "45"
     ],
     "textured_cool_plate_temp": [
-        "45"
+        "40"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "45"
+        "40"
     ],
     "textured_plate_temp": [
         "55"
