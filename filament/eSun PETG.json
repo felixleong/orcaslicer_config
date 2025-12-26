@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "8"
+        "9"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -151,7 +151,7 @@
         "nil"
     ],
     "filament_retraction_length": [
-        "nil"
+        "0.2"
     ],
     "filament_retraction_minimum_travel": [
         "nil"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "eSun PETG",
     "nozzle_temperature": [
-        "240"
+        "235"
     ],
     "nozzle_temperature_initial_layer": [
-        "240"
+        "245"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.084"
+        "0.092"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
