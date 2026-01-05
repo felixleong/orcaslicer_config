@@ -163,10 +163,10 @@
         "Jamg He PLA+"
     ],
     "filament_shrink": [
-        "99.3%"
+        "99.5%"
     ],
     "filament_shrinkage_compensation_z": [
-        "100.94%"
+        "100%"
     ],
     "filament_soluble": [
         "0"

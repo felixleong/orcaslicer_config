@@ -142,22 +142,22 @@
         "nil"
     ],
     "filament_retract_restart_extra": [
-        "nil"
+        "0.15"
     ],
     "filament_retract_when_changing_layer": [
-        "nil"
+        "0"
     ],
     "filament_retraction_distances_when_cut": [
         "nil"
     ],
     "filament_retraction_length": [
-        "0.3"
+        "nil"
     ],
     "filament_retraction_minimum_travel": [
         "nil"
     ],
     "filament_retraction_speed": [
-        "50"
+        "nil"
     ],
     "filament_settings_id": [
         "JamgHe Transparent PETG"
