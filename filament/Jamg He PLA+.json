@@ -43,7 +43,7 @@
         "#80FF80"
     ],
     "dont_slow_down_outer_wall": [
-        "0"
+        "1"
     ],
     "during_print_exhaust_fan_speed": [
         "70"
@@ -67,7 +67,7 @@
         "100"
     ],
     "fan_min_speed": [
-        "100"
+        "70"
     ],
     "filament_cooling_final_speed": [
         "3.4"
@@ -230,7 +230,7 @@
     "is_custom_defined": "0",
     "name": "Jamg He PLA+",
     "nozzle_temperature": [
-        "215"
+        "220"
     ],
     "nozzle_temperature_initial_layer": [
         "220"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.03"
+        "0.022"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
