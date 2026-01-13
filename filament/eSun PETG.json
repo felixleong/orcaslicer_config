@@ -34,10 +34,10 @@
         "70"
     ],
     "cool_plate_temp": [
-        "70"
+        "75"
     ],
     "cool_plate_temp_initial_layer": [
-        "70"
+        "75"
     ],
     "default_filament_colour": [
         "#FF8000"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.935"
+        "0.915"
     ],
     "filament_is_support": [
         "0"
@@ -151,7 +151,7 @@
         "nil"
     ],
     "filament_retraction_length": [
-        "0.2"
+        "nil"
     ],
     "filament_retraction_minimum_travel": [
         "nil"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "M290 R0 S0.06"
+        "M290 R0 S0.032"
     ],
     "filament_toolchange_delay": [
         "0"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "eSun PETG",
     "nozzle_temperature": [
-        "250"
+        "240"
     ],
     "nozzle_temperature_initial_layer": [
-        "250"
+        "240"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.062"
+        "0.058"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
@@ -269,10 +269,10 @@
         "10"
     ],
     "supertack_plate_temp": [
-        "70"
+        "75"
     ],
     "supertack_plate_temp_initial_layer": [
-        "70"
+        "75"
     ],
     "support_material_interface_fan_speed": [
         "-1"
@@ -281,10 +281,10 @@
         "70"
     ],
     "textured_cool_plate_temp": [
-        "70"
+        "75"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "70"
+        "75"
     ],
     "textured_plate_temp": [
         "75"
