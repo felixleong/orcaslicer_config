@@ -40,7 +40,7 @@
         "75"
     ],
     "default_filament_colour": [
-        "#FF9D6F"
+        "#FF8000"
     ],
     "dont_slow_down_outer_wall": [
         "1"
@@ -160,7 +160,7 @@
         "nil"
     ],
     "filament_settings_id": [
-        "eSun PETG"
+        "eSun PETG (White)"
     ],
     "filament_shrink": [
         "99.5%"
@@ -228,7 +228,7 @@
         "-1"
     ],
     "is_custom_defined": "0",
-    "name": "eSun PETG",
+    "name": "eSun PETG (White)",
     "nozzle_temperature": [
         "240"
     ],
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.054"
+        "0.064"
     ],
     "reduce_fan_stop_start_freq": [
         "1"

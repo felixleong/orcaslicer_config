@@ -1,6 +1,4 @@
 #! /usr/bin/env bash
-set -x
-
 # Functions
 function help_usage() {
   echo >&2 "\

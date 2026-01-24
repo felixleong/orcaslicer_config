@@ -1,0 +1,67 @@
+{
+    "cool_plate_temp": [
+        "40"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "40"
+    ],
+    "default_filament_colour": [
+        "#FF0000"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "eng_plate_temp": [
+        "40"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "40"
+    ],
+    "filament_flow_ratio": [
+        "0.99"
+    ],
+    "filament_max_volumetric_speed": [
+        "3.5"
+    ],
+    "filament_retraction_length": [
+        "0.1"
+    ],
+    "filament_settings_id": [
+        "Cheetah TPU"
+    ],
+    "filament_start_gcode": [
+        "; Filament gcode\nM290 R0 S0.02"
+    ],
+    "filament_vendor": [
+        "Cheetah"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "50"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "50"
+    ],
+    "inherits": "Generic TPU @System",
+    "is_custom_defined": "0",
+    "name": "Cheetah TPU",
+    "nozzle_temperature": [
+        "235"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "235"
+    ],
+    "pressure_advance": [
+        "0.032"
+    ],
+    "slow_down_layer_time": [
+        "1"
+    ],
+    "textured_plate_temp": [
+        "50"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "50"
+    ],
+    "version": "2.3.1.10"
+}

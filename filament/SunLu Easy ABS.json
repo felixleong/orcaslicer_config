@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.98"
+        "0.95"
     ],
     "filament_is_support": [
         "0"
@@ -151,7 +151,7 @@
         "nil"
     ],
     "filament_retraction_length": [
-        "0.2"
+        "nil"
     ],
     "filament_retraction_minimum_travel": [
         "nil"
@@ -163,7 +163,7 @@
         "SunLu Easy ABS"
     ],
     "filament_shrink": [
-        "100%"
+        "99.15%"
     ],
     "filament_shrinkage_compensation_z": [
         "100%"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "; Filament gcode\n"
+        "; Filament gcode\nM290 R0 S0.07"
     ],
     "filament_toolchange_delay": [
         "0"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.034"
+        "0.026"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
