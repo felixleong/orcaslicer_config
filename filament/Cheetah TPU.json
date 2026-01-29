@@ -30,7 +30,7 @@
         "Cheetah TPU"
     ],
     "filament_start_gcode": [
-        "; Filament gcode\nM290 R0 S0.02"
+        "; Filament gcode\nM290 R1 S0.02"
     ],
     "filament_vendor": [
         "Cheetah"

@@ -40,7 +40,7 @@
         "70"
     ],
     "default_filament_colour": [
-        ""
+        "#868686"
     ],
     "dont_slow_down_outer_wall": [
         "0"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "16"
+        "10"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "; Filament gcode\nM290 R0 S0.04"
+        "; Filament gcode\nM290 R1 S0.07"
     ],
     "filament_toolchange_delay": [
         "0"

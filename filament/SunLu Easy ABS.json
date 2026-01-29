@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "; Filament gcode\nM290 R0 S0.07"
+        "; Filament gcode\nM290 R1 S0.07"
     ],
     "filament_toolchange_delay": [
         "0"

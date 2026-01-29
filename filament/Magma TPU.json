@@ -26,6 +26,9 @@
     "filament_settings_id": [
         "Magma TPU"
     ],
+    "filament_start_gcode": [
+        "; Filament gcode\nM290 R1 S0.02"
+    ],
     "filament_vendor": [
         "Magma"
     ],

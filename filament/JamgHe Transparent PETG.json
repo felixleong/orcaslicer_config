@@ -64,7 +64,7 @@
         "20"
     ],
     "fan_max_speed": [
-        "100"
+        "50"
     ],
     "fan_min_speed": [
         "20"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "; Filament gcode\n"
+        "; Filament gcode\nM290 R1 S0.04"
     ],
     "filament_toolchange_delay": [
         "0"

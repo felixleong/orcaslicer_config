@@ -75,4 +75,3 @@ sd \
   '("'${CONFIG_KEY}'": )"'${VALUE_REGEX}'"' \
   '$1"'${CONFIG_VALUE}'"' \
   *.json
-echo $?

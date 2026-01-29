@@ -34,13 +34,13 @@
         "70"
     ],
     "cool_plate_temp": [
-        "90"
+        "80"
     ],
     "cool_plate_temp_initial_layer": [
-        "90"
+        "80"
     ],
     "default_filament_colour": [
-        ""
+        "#0080FF"
     ],
     "dont_slow_down_outer_wall": [
         "0"
@@ -55,16 +55,16 @@
         "1"
     ],
     "eng_plate_temp": [
-        "90"
+        "80"
     ],
     "eng_plate_temp_initial_layer": [
-        "90"
+        "80"
     ],
     "fan_cooling_layer_time": [
         "30"
     ],
     "fan_max_speed": [
-        "80"
+        "50"
     ],
     "fan_min_speed": [
         "10"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "8"
+        "10"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -163,7 +163,7 @@
         "Fabxibble LW-ABS"
     ],
     "filament_shrink": [
-        "100%"
+        "99.7%"
     ],
     "filament_shrinkage_compensation_z": [
         "100%"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "; Filament gcode\nM290 R0 S0.04"
+        "; Filament gcode\nM290 R1 S0.07"
     ],
     "filament_toolchange_delay": [
         "0"
@@ -212,10 +212,10 @@
         "0"
     ],
     "hot_plate_temp": [
-        "90"
+        "80"
     ],
     "hot_plate_temp_initial_layer": [
-        "90"
+        "80"
     ],
     "idle_temperature": [
         "0"
@@ -233,7 +233,7 @@
         "240"
     ],
     "nozzle_temperature_initial_layer": [
-        "225"
+        "240"
     ],
     "nozzle_temperature_range_high": [
         "250"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.07"
+        "0.038"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
@@ -281,16 +281,16 @@
         "110"
     ],
     "textured_cool_plate_temp": [
-        "90"
+        "80"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "90"
+        "80"
     ],
     "textured_plate_temp": [
-        "90"
+        "80"
     ],
     "textured_plate_temp_initial_layer": [
-        "90"
+        "80"
     ],
     "version": "2.0.2.0"
 }

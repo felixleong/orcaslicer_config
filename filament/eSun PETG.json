@@ -64,7 +64,7 @@
         "20"
     ],
     "fan_max_speed": [
-        "70"
+        "50"
     ],
     "fan_min_speed": [
         "20"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.925"
+        "0.935"
     ],
     "filament_is_support": [
         "0"
@@ -151,7 +151,7 @@
         "nil"
     ],
     "filament_retraction_length": [
-        "nil"
+        "0.2"
     ],
     "filament_retraction_minimum_travel": [
         "nil"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "M290 R0 S0.04"
+        "M290 R1 S0.04"
     ],
     "filament_toolchange_delay": [
         "0"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "eSun PETG",
     "nozzle_temperature": [
-        "240"
+        "250"
     ],
     "nozzle_temperature_initial_layer": [
-        "240"
+        "250"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.054"
+        "0.042"
     ],
     "reduce_fan_stop_start_freq": [
         "1"

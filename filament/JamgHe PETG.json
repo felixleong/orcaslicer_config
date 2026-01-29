@@ -34,10 +34,10 @@
         "70"
     ],
     "cool_plate_temp": [
-        "65"
+        "70"
     ],
     "cool_plate_temp_initial_layer": [
-        "65"
+        "70"
     ],
     "default_filament_colour": [
         "#FF8000"
@@ -64,7 +64,7 @@
         "20"
     ],
     "fan_max_speed": [
-        "70"
+        "50"
     ],
     "fan_min_speed": [
         "20"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.975"
+        "0.94"
     ],
     "filament_is_support": [
         "0"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "9"
+        "8"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -142,10 +142,10 @@
         "nil"
     ],
     "filament_retract_restart_extra": [
-        "0.15"
+        "0.08"
     ],
     "filament_retract_when_changing_layer": [
-        "0"
+        "nil"
     ],
     "filament_retraction_distances_when_cut": [
         "nil"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        ""
+        ";M290 R1 S0.02"
     ],
     "filament_toolchange_delay": [
         "0"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "JamgHe PETG",
     "nozzle_temperature": [
-        "240"
+        "230"
     ],
     "nozzle_temperature_initial_layer": [
-        "240"
+        "230"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.0984"
+        "0.04"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
@@ -269,10 +269,10 @@
         "10"
     ],
     "supertack_plate_temp": [
-        "65"
+        "70"
     ],
     "supertack_plate_temp_initial_layer": [
-        "65"
+        "70"
     ],
     "support_material_interface_fan_speed": [
         "-1"
@@ -281,10 +281,10 @@
         "70"
     ],
     "textured_cool_plate_temp": [
-        "65"
+        "70"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "65"
+        "70"
     ],
     "textured_plate_temp": [
         "75"

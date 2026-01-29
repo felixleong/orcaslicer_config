@@ -64,7 +64,7 @@
         "20"
     ],
     "fan_max_speed": [
-        "70"
+        "50"
     ],
     "fan_min_speed": [
         "20"
@@ -151,7 +151,7 @@
         "nil"
     ],
     "filament_retraction_length": [
-        "nil"
+        "0.2"
     ],
     "filament_retraction_minimum_travel": [
         "nil"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "M290 R0 S0.04"
+        "M290 R1 S0.04"
     ],
     "filament_toolchange_delay": [
         "0"
