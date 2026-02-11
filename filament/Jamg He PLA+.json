@@ -6,13 +6,13 @@
         "0"
     ],
     "adaptive_pressure_advance": [
-        "0"
+        "1"
     ],
     "adaptive_pressure_advance_bridges": [
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0,0,0\n0,0,0"
+        "0.051,5.082,500\n0.048,8.893,500\n0.033,12.7,500"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.022"
+        "0.048"
     ],
     "reduce_fan_stop_start_freq": [
         "1"

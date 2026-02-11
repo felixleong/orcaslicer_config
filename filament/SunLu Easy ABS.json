@@ -6,13 +6,13 @@
         "0"
     ],
     "adaptive_pressure_advance": [
-        "0"
+        "1"
     ],
     "adaptive_pressure_advance_bridges": [
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0,0,0\n0,0,0"
+        "0.030,1.20,500\n0.037,3.60,500\n0.040,6.00,500\n0.045,8.41,500"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.95"
+        "0.98"
     ],
     "filament_is_support": [
         "0"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.026"
+        "0.04"
     ],
     "reduce_fan_stop_start_freq": [
         "1"

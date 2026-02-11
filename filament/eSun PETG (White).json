@@ -6,13 +6,13 @@
         "0"
     ],
     "adaptive_pressure_advance": [
-        "0"
+        "1"
     ],
     "adaptive_pressure_advance_bridges": [
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0,0,0\n0,0,0"
+        "0.105,4.75,500\n0.073,8.32,500\n0.068,11.9,500"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.925"
+        "0.94"
     ],
     "filament_is_support": [
         "0"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "7"
+        "9"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -142,7 +142,7 @@
         "nil"
     ],
     "filament_retract_restart_extra": [
-        "nil"
+        "0.05"
     ],
     "filament_retract_when_changing_layer": [
         "nil"
@@ -151,7 +151,7 @@
         "nil"
     ],
     "filament_retraction_length": [
-        "0.2"
+        "nil"
     ],
     "filament_retraction_minimum_travel": [
         "nil"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "M290 R1 S0.04"
+        ""
     ],
     "filament_toolchange_delay": [
         "0"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "eSun PETG (White)",
     "nozzle_temperature": [
-        "240"
+        "245"
     ],
     "nozzle_temperature_initial_layer": [
-        "240"
+        "245"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.064"
+        "0.078"
     ],
     "reduce_fan_stop_start_freq": [
         "1"

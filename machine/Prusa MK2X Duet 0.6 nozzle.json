@@ -123,16 +123,16 @@
         "0"
     ],
     "machine_pause_gcode": "M226",
-    "machine_start_gcode": "G90                                 ; use absolute coordinates\nM83                                 ; extruder relative mode\n\n; Check whether printer filament matches - {filament_type[0]}\nM98 P\"/macros/Utility/Validate Slicer Param\" F\"{filament_type[0]}\" B\"{curr_bed_type}\"\n\n; First phase heating routine - Stabilize heating conditions for stable bed probing\nM109 S160                           ; heat up the nozzle first (to warm up PINDA gently & filament retraction)\nM190 S{min(70, first_layer_bed_temperature[0])}                            ; heat up bed to 70C (or first layer bed temp, if lower) to have it hot enough for the probing sequence (that can keep its temp between each probe)\n\n; Bed probing routine\nG28                                 ; Home printer\nM557 X{max(25, min(85, first_layer_print_min[0] - 20))}:{min(245, max(165, first_layer_print_max[0] + 20))} Y{max(4, min(70, first_layer_print_min[1] - 20))}:{min(205, max(140, first_layer_print_max[1] + 20))} P3:3\nG32                                 ; Probe bed (/sys/bed.g)\n\n; Preparing to start print\nG1 X100 Y-2 F10000                  ; Go roughly where the intro line is going to go\nM190 S[first_layer_bed_temperature] ; wait for bed temp\n\nM109 S[first_layer_temperature]     ; wait for extruder temp\nM582 T8                             ; double check to make sure filament is loaded\n\nM300 S1200 P1200                    ; Beep to inform that print is starting\nG4 S5                               ; Wait for 5 seconds\nG1 Z0.6 F720                        ; Hover 0.6mm above bed\n\n; Intro line\nG1 E12 F1000                        ; Blob\nG1 X150 E8 F1000                    ; Intro line\nG92 E0\nG1 Z[first_layer_height] F720",
+    "machine_start_gcode": "G90                                 ; use absolute coordinates\nM83                                 ; extruder relative mode\n\n; Check whether printer filament matches - {filament_type[0]}\nM98 P\"/macros/Utility/Validate Slicer Param\" F\"{filament_type[0]}\" B\"{curr_bed_type}\"\n\n; First phase heating routine - Stabilize heating conditions for stable bed probing\nM190 S{min(70, first_layer_bed_temperature[0])}                            ; heat up bed to 70C (or first layer bed temp, if lower) to have it hot enough for the probing sequence (that can keep its temp between each probe)\nM109 S160                           ; heat up the nozzle first (to warm up PINDA gently & filament retraction)\n\n; Bed probing routine\nG28                                 ; Home printer\nM557 X{max(25, min(85, first_layer_print_min[0] - 20))}:{min(245, max(165, first_layer_print_max[0] + 20))} Y{max(4, min(70, first_layer_print_min[1] - 20))}:{min(205, max(140, first_layer_print_max[1] + 20))} P3:3\nG32                                 ; Probe bed (/sys/bed.g)\n\n; Preparing to start print\nG1 X100 Y-2 F10000                  ; Go roughly where the intro line is going to go\nM190 S[first_layer_bed_temperature] ; wait for bed temp\n\nM109 S[first_layer_temperature]     ; wait for extruder temp\nM582 T8                             ; double check to make sure filament is loaded\n\nM300 S1200 P1200                    ; Beep to inform that print is starting\nG4 S5                               ; Wait for 5 seconds\nG1 Z0.6 F720                        ; Hover 0.6mm above bed\n\n; Intro line\nG1 E12 F1000                        ; Blob\nG1 X150 E8 F1000                    ; Intro line\nG92 E0\nG1 Z[first_layer_height] F720",
     "machine_tool_change_time": "0",
     "machine_unload_filament_time": "0",
     "manual_filament_change": "1",
     "max_layer_height": [
-        "0.48"
+        "0.45"
     ],
     "max_resonance_avoidance_speed": "120",
     "min_layer_height": [
-        "0.07"
+        "0.15"
     ],
     "min_resonance_avoidance_speed": "70",
     "name": "Prusa MK2X Duet 0.6 nozzle",

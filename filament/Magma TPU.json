@@ -1,4 +1,10 @@
 {
+    "adaptive_pressure_advance": [
+        "1"
+    ],
+    "adaptive_pressure_advance_model": [
+        "0.035,5.56,500\n0.015,9.73,500\n0.010,13.9,500"
+    ],
     "cool_plate_temp": [
         "40"
     ],
@@ -18,10 +24,13 @@
         "40"
     ],
     "filament_flow_ratio": [
-        "1.02"
+        "1.25"
     ],
     "filament_max_volumetric_speed": [
         "4.5"
+    ],
+    "filament_retract_restart_extra": [
+        "0.3"
     ],
     "filament_settings_id": [
         "Magma TPU"
@@ -31,6 +40,9 @@
     ],
     "filament_vendor": [
         "Magma"
+    ],
+    "filament_wipe": [
+        "0"
     ],
     "from": "User",
     "hot_plate_temp": [
@@ -43,13 +55,10 @@
     "is_custom_defined": "0",
     "name": "Magma TPU",
     "nozzle_temperature": [
-        "190"
+        "195"
     ],
     "nozzle_temperature_initial_layer": [
-        "190"
-    ],
-    "pressure_advance": [
-        "0.054"
+        "195"
     ],
     "slow_down_layer_time": [
         "1"

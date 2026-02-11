@@ -6,13 +6,13 @@
         "0"
     ],
     "adaptive_pressure_advance": [
-        "0"
+        "1"
     ],
     "adaptive_pressure_advance_bridges": [
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0,0,0\n0,0,0"
+        "0.122,4.779,500\n0.076,9.362,500\n0.063,10.75,500"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"

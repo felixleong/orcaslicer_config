@@ -6,13 +6,13 @@
         "0"
     ],
     "adaptive_pressure_advance": [
-        "0"
+        "1"
     ],
     "adaptive_pressure_advance_bridges": [
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0,0,0\n0,0,0"
+        "0.052,3.64,500\n0.045,7.28,500\n0.042,10.9,500\n0.037,13.3,500"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.9626"
+        "0.96"
     ],
     "filament_is_support": [
         "0"
@@ -151,7 +151,7 @@
         "nil"
     ],
     "filament_retraction_length": [
-        "0.3"
+        "nil"
     ],
     "filament_retraction_minimum_travel": [
         "nil"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "eSun PLA+",
     "nozzle_temperature": [
-        "205"
+        "200"
     ],
     "nozzle_temperature_initial_layer": [
-        "205"
+        "200"
     ],
     "nozzle_temperature_range_high": [
         "240"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.03"
+        "0.045"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
