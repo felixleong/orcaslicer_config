@@ -8,7 +8,7 @@
     "bed_mesh_max": "250,210",
     "bed_mesh_min": "0,-2",
     "bed_mesh_probe_distance": "23,4",
-    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE - [layer_z]mm\nG92 E0",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE -  [layer_num]::[layer_z]mm\nG92 E0",
     "best_object_pos": "0.5,0.5",
     "change_extrusion_role_gcode": "",
     "change_filament_gcode": "M600",
@@ -44,7 +44,7 @@
     "host_type": "duet",
     "inherits": "",
     "is_custom_defined": "0",
-    "layer_change_gcode": ";AFTER_LAYER_CHANGE - [layer_num]::[layer_z]",
+    "layer_change_gcode": ";AFTER_LAYER_CHANGE - [layer_num]::[layer_z]mm",
     "long_retractions_when_cut": [
         "0"
     ],

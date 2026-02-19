@@ -23,7 +23,7 @@ CONFIG_VALUE=unset
 
 # 1. Check arguments, print usage message if input fails to validate
 PARSED_ARGS=$(
-  getopt -a -n alphabet -o ht: --long help,text-value -- "$@")
+  getopt -a -n alphabet -o ht --long help,text -- "$@")
 VALID_ARGS=$?
 if [ "$VALID_ARGS" != "0" ]; then
   help_usage 1
@@ -41,7 +41,7 @@ do
     # which we checked as VALID_ARGS when getopt was called...
     -h | --help)   help_usage ;;
     *) echo "Unexpected option: $1 - this should not happen."
-       usage ;;
+       help_usage ;;
   esac
 done
 

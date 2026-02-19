@@ -34,10 +34,10 @@
         "70"
     ],
     "cool_plate_temp": [
-        "40"
+        "50"
     ],
     "cool_plate_temp_initial_layer": [
-        "40"
+        "50"
     ],
     "default_filament_colour": [
         "#80FF80"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "eSun PLA+",
     "nozzle_temperature": [
-        "200"
+        "210"
     ],
     "nozzle_temperature_initial_layer": [
-        "200"
+        "210"
     ],
     "nozzle_temperature_range_high": [
         "240"
@@ -281,10 +281,10 @@
         "45"
     ],
     "textured_cool_plate_temp": [
-        "40"
+        "50"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "40"
+        "50"
     ],
     "textured_plate_temp": [
         "60"
