@@ -12,7 +12,7 @@
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0.052,3.64,500\n0.045,7.28,500\n0.042,10.9,500\n0.037,13.3,500"
+        "0.052,3.64,500\n0.045,7.28,500\n0.042,10.9,500\n0.037,13.3,500\n0.047,6.07,800\n0.045,8.50,800\n0.040,12.1,800\n0.045,6.07,1000\n0.040,8.50,1000\n0.037,12.1,1000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -145,7 +145,7 @@
         "nil"
     ],
     "filament_retract_when_changing_layer": [
-        "nil"
+        "0"
     ],
     "filament_retraction_distances_when_cut": [
         "nil"
@@ -196,7 +196,7 @@
         "eSun"
     ],
     "filament_wipe": [
-        "nil"
+        "0"
     ],
     "filament_wipe_distance": [
         "nil"

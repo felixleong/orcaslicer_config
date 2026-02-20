@@ -35,7 +35,7 @@
     "print_host": "192.168.0.212",
     "printer_settings_id": "Voron 0.2 - 0.3 nozzle",
     "retraction_length": [
-        "0.2"
+        "0.3"
     ],
     "support_multi_bed_types": "1",
     "time_cost": "0.0435",

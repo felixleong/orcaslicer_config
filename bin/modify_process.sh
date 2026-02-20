@@ -1,9 +1,9 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 # Functions
 function help_usage() {
   echo >&2 "\
 NAME:
-  $0 - $0 [<options>] <config-key> <config-value>
+  $0 - $0 [<options>] <config-key> <config-value> [<file-pattern>]
 
 DESCRIPTION:
   Modify Orcaslicer process configuration value.
@@ -52,26 +52,25 @@ if [ $# -lt 2 ]; then
   help_usage 1
 fi
 
+# Change working directory
+cd process
+
 # Set variable
 CONFIG_KEY="$1"
 CONFIG_VALUE="$2"
+FILE_PATTERN=*.json
+if [[ -n "$3" ]]; then
+  FILE_PATTERN=$3
+fi
 
-cd process
-if ! rg -q "${CONFIG_KEY}" *.json; then
+if ! rg -q "${CONFIG_KEY}" $FILE_PATTERN; then
   echo >&2 "(EE) Config key not found - ${CONFIG_KEY}: Exit code $?"
   echo >&2
 
   exit 1
 fi
 
-
-#  '\("'"${CONFIG_KEY}"'": \)"'"${VALUE_REGEX}"'"' \
-#  '$1"'"${CONFIG_VALUE}"'"' \
-
-#  '\("initial_layer_speed": "\)[\d\.%]"' \
-#  '$1"55"' \
-
 sd \
   '("'${CONFIG_KEY}'": )"'${VALUE_REGEX}'"' \
   '$1"'${CONFIG_VALUE}'"' \
-  *.json
+  $FILE_PATTERN
