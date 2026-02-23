@@ -6,13 +6,13 @@
         "0"
     ],
     "adaptive_pressure_advance": [
-        "0"
+        "1"
     ],
     "adaptive_pressure_advance_bridges": [
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0,0,0\n0,0,0"
+        "0.060,5.91,800\n0.060,8.27,800\n0.052,11.8,800\n0.055,5.91,1000\n0.055,8.27,1000\n0.055,11.8,1000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "7"
+        "9"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -151,7 +151,7 @@
         "nil"
     ],
     "filament_retraction_length": [
-        "0.2"
+        "nil"
     ],
     "filament_retraction_minimum_travel": [
         "nil"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "eSun PETG",
     "nozzle_temperature": [
-        "250"
+        "240"
     ],
     "nozzle_temperature_initial_layer": [
-        "250"
+        "240"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.042"
+        "0.055"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
