@@ -226,7 +226,7 @@
     "sparse_infill_line_width": "110%",
     "sparse_infill_pattern": "adaptivecubic",
     "sparse_infill_rotate_template": "",
-    "sparse_infill_speed": "80",
+    "sparse_infill_speed": "65",
     "spiral_finishing_flow_ratio": "0",
     "spiral_mode": "0",
     "spiral_mode_max_xy_smoothing": "200%",
