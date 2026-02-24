@@ -18,12 +18,13 @@ OPTIONS:
 # =====================================================================================
 # 0. Set variables
 VALUE_REGEX='[\d.%]*'
+DIR_NAME=process
 CONFIG_KEY=unset
 CONFIG_VALUE=unset
 
 # 1. Check arguments, print usage message if input fails to validate
 PARSED_ARGS=$(
-  getopt -a -n alphabet -o ht --long help,text -- "$@")
+  getopt -a -n alphabet -o htd: --long help,text,dir: -- "$@")
 VALID_ARGS=$?
 if [ "$VALID_ARGS" != "0" ]; then
   help_usage 1
@@ -34,6 +35,7 @@ while :
 do
   case "$1" in
     -t | --text) VALUE_REGEX='.*'; shift ;;
+    -d | --dir) DIR_NAME="$2"; shift 2;;
 
     # -- means the end of the arguments; drop this, and break out of the while loop
     --) shift; break ;;
@@ -53,7 +55,7 @@ if [ $# -lt 2 ]; then
 fi
 
 # Change working directory
-cd process
+cd "$DIR_NAME"
 
 # Set variable
 CONFIG_KEY="$1"

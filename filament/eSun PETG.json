@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "9"
+        "10"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "M290 R1 S0.04"
+        ""
     ],
     "filament_toolchange_delay": [
         "0"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "eSun PETG",
     "nozzle_temperature": [
-        "240"
+        "255"
     ],
     "nozzle_temperature_initial_layer": [
-        "240"
+        "255"
     ],
     "nozzle_temperature_range_high": [
         "260"

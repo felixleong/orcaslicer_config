@@ -27,7 +27,7 @@
         "1.25"
     ],
     "filament_max_volumetric_speed": [
-        "4.5"
+        "4"
     ],
     "filament_retract_restart_extra": [
         "0.3"
@@ -36,7 +36,7 @@
         "Magma TPU"
     ],
     "filament_start_gcode": [
-        "; Filament gcode\nM290 R1 S0.02"
+        "; Filament gcode"
     ],
     "filament_vendor": [
         "Magma"
@@ -55,10 +55,10 @@
     "is_custom_defined": "0",
     "name": "Magma TPU",
     "nozzle_temperature": [
-        "195"
+        "210"
     ],
     "nozzle_temperature_initial_layer": [
-        "195"
+        "210"
     ],
     "slow_down_layer_time": [
         "1"
