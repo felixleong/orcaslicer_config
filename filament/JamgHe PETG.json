@@ -12,7 +12,7 @@
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0.122,4.779,500\n0.076,9.362,500\n0.063,10.75,500"
+        "0.122,4.779,500\n0.076,9.362,500\n0.063,10.75,500\n0.077,5.88,800\n0.075,8.23,800\n0.072,11.8,800\n0.082,5.88,1000\n0.082,8.23,1000\n0.077,11.8,1000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -27,7 +27,7 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "",
+    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*NOZZLE_CHC_TUN.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "14"
+        "8.5"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -145,7 +145,7 @@
         "0.08"
     ],
     "filament_retract_when_changing_layer": [
-        "nil"
+        "0"
     ],
     "filament_retraction_distances_when_cut": [
         "nil"
@@ -196,7 +196,7 @@
         "JamgHe"
     ],
     "filament_wipe": [
-        "nil"
+        "0"
     ],
     "filament_wipe_distance": [
         "nil"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.09"
+        "0.077"
     ],
     "reduce_fan_stop_start_freq": [
         "1"

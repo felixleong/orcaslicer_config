@@ -27,7 +27,7 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "",
+    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*NOZZLE_CHC_TUN.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "14"
+        "10"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"

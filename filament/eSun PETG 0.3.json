@@ -6,13 +6,13 @@
         "0"
     ],
     "adaptive_pressure_advance": [
-        "0"
+        "1"
     ],
     "adaptive_pressure_advance_bridges": [
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0,0,0\n0,0,0"
+        "0.060,5.91,800\n0.060,8.27,800\n0.052,11.8,800\n0.055,5.91,1000\n0.055,8.27,1000\n0.055,11.8,1000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -27,23 +27,23 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*NOZZLE_CHC_TUN.*/",
+    "compatible_printers_condition": "nozzle_diameter[0]==0.3",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
         "70"
     ],
     "cool_plate_temp": [
-        "65"
+        "75"
     ],
     "cool_plate_temp_initial_layer": [
-        "65"
+        "75"
     ],
     "default_filament_colour": [
-        "#80FFFF"
+        "#FF9D6F"
     ],
     "dont_slow_down_outer_wall": [
-        "0"
+        "1"
     ],
     "during_print_exhaust_fan_speed": [
         "70"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.965"
+        "0.935"
     ],
     "filament_is_support": [
         "0"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "11"
+        "1.2"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -142,10 +142,10 @@
         "nil"
     ],
     "filament_retract_restart_extra": [
-        "0.15"
+        "nil"
     ],
     "filament_retract_when_changing_layer": [
-        "0"
+        "nil"
     ],
     "filament_retraction_distances_when_cut": [
         "nil"
@@ -160,10 +160,10 @@
         "nil"
     ],
     "filament_settings_id": [
-        "JamgHe Transparent PETG"
+        "eSun PETG 0.3"
     ],
     "filament_shrink": [
-        "100%"
+        "99.5%"
     ],
     "filament_shrinkage_compensation_z": [
         "100%"
@@ -178,7 +178,7 @@
         "0"
     ],
     "filament_start_gcode": [
-        "; Filament gcode"
+        ""
     ],
     "filament_toolchange_delay": [
         "0"
@@ -193,7 +193,7 @@
         "100"
     ],
     "filament_vendor": [
-        "JamgHe"
+        "eSun"
     ],
     "filament_wipe": [
         "nil"
@@ -228,12 +228,12 @@
         "-1"
     ],
     "is_custom_defined": "0",
-    "name": "JamgHe Transparent PETG",
+    "name": "eSun PETG 0.3",
     "nozzle_temperature": [
-        "225"
+        "245"
     ],
     "nozzle_temperature_initial_layer": [
-        "225"
+        "245"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.07"
+        "0.055"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
@@ -263,16 +263,16 @@
         "1"
     ],
     "slow_down_layer_time": [
-        "8"
+        "1"
     ],
     "slow_down_min_speed": [
         "10"
     ],
     "supertack_plate_temp": [
-        "65"
+        "75"
     ],
     "supertack_plate_temp_initial_layer": [
-        "65"
+        "75"
     ],
     "support_material_interface_fan_speed": [
         "-1"
@@ -281,10 +281,10 @@
         "70"
     ],
     "textured_cool_plate_temp": [
-        "65"
+        "75"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "65"
+        "75"
     ],
     "textured_plate_temp": [
         "75"
