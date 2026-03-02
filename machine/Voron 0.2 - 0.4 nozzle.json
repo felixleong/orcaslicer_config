@@ -5,11 +5,11 @@
     "is_custom_defined": "0",
     "layer_change_gcode": ";AFTER_LAYER_CHANGE - [layer_num]::[layer_z]mm",
     "machine_max_acceleration_extruding": [
-        "500",
+        "3000",
         "20000"
     ],
     "machine_max_acceleration_retracting": [
-        "500",
+        "3000",
         "5000"
     ],
     "machine_max_acceleration_x": [

@@ -9,6 +9,7 @@ DESCRIPTION:
   Modify Orcaslicer process configuration value.
 
 OPTIONS:
+  --dir=<dir_name>, -d <dir_name>     The directory to scan the files.
   --text, -t                          The configuration value is a text value
   --help, -h                          Show the help message
 "

@@ -63,15 +63,15 @@
         "1250"
     ],
     "machine_max_acceleration_travel": [
-        "2000",
+        "3000",
         "3000"
     ],
     "machine_max_acceleration_x": [
-        "1000",
+        "2000",
         "1000"
     ],
     "machine_max_acceleration_y": [
-        "1000",
+        "2000",
         "1000"
     ],
     "machine_max_acceleration_z": [
