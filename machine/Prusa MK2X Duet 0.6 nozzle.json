@@ -156,7 +156,7 @@
     ],
     "printable_height": "200",
     "printer_model": "",
-    "printer_notes": "PRINTER_MODEL_MK2X\nNOZZLE_CHC_TUN",
+    "printer_notes": "PRINTER_MODEL_MK2X\nNOZZLE_CHC_TUN\nFLOW_STANDARD",
     "printer_settings_id": "Prusa MK2X Duet 0.6 nozzle",
     "printer_structure": "undefine",
     "printer_technology": "FFF",

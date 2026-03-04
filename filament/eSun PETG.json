@@ -12,7 +12,7 @@
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0.060,5.91,800\n0.060,8.27,800\n0.052,11.8,800\n0.055,5.91,1000\n0.055,8.27,1000\n0.055,11.8,1000"
+        "0.060,5.91,800\n0.060,8.27,800\n0.052,11.8,800\n0.055,5.91,1000\n0.055,8.27,1000\n0.055,11.8,1000\n0.080,7.12,2000\n0.075,10.7,2000\n0.065,14.3,2000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -27,7 +27,7 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4",
+    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_STANDARD.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.935"
+        "0.94"
     ],
     "filament_is_support": [
         "0"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "eSun PETG",
     "nozzle_temperature": [
-        "255"
+        "245"
     ],
     "nozzle_temperature_initial_layer": [
-        "255"
+        "245"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.055"
+        "0.07"
     ],
     "reduce_fan_stop_start_freq": [
         "1"

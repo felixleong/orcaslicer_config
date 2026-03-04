@@ -33,7 +33,7 @@
     ],
     "nozzle_type": "hardened_steel",
     "print_host": "192.168.0.212",
-    "printer_notes": "PRINTER_MODEL_VORON0\nNOZZLE_DRAGON_SF",
+    "printer_notes": "PRINTER_MODEL_VORON0\nNOZZLE_DRAGON_SF\nFLOW_LOWER",
     "printer_settings_id": "Voron 0.2 - 0.6 nozzle",
     "retraction_length": [
         "0.2"

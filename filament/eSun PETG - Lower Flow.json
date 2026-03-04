@@ -12,35 +12,35 @@
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0.046,5.082,500\n0.043,8.893,500\n0.033,12.7,500"
+        "0.060,5.91,800\n0.060,8.27,800\n0.052,11.8,800\n0.055,5.91,1000\n0.055,8.27,1000\n0.055,11.8,1000\n0.080,7.12,2000\n0.075,10.7,2000\n0.065,14.3,2000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
     ],
     "additional_cooling_fan_speed": [
-        "70"
+        "0"
     ],
     "chamber_temperature": [
         "0"
     ],
     "close_fan_the_first_x_layers": [
-        "2"
+        "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_STANDARD.*/",
+    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_LOWER.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
         "70"
     ],
     "cool_plate_temp": [
-        "45"
+        "75"
     ],
     "cool_plate_temp_initial_layer": [
-        "45"
+        "75"
     ],
     "default_filament_colour": [
-        "#80FF80"
+        "#FF9D6F"
     ],
     "dont_slow_down_outer_wall": [
         "1"
@@ -55,19 +55,19 @@
         "1"
     ],
     "eng_plate_temp": [
-        "45"
+        "0"
     ],
     "eng_plate_temp_initial_layer": [
-        "45"
+        "0"
     ],
     "fan_cooling_layer_time": [
-        "100"
+        "20"
     ],
     "fan_max_speed": [
-        "100"
+        "50"
     ],
     "fan_min_speed": [
-        "70"
+        "20"
     ],
     "filament_cooling_final_speed": [
         "3.4"
@@ -79,10 +79,10 @@
         "4"
     ],
     "filament_cost": [
-        "60"
+        "65"
     ],
     "filament_density": [
-        "1.24"
+        "1.27"
     ],
     "filament_deretraction_speed": [
         "nil"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "1.04"
+        "0.94"
     ],
     "filament_is_support": [
         "0"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "8.5"
+        "7"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -160,7 +160,7 @@
         "nil"
     ],
     "filament_settings_id": [
-        "Jamg He PLA+"
+        "eSun PETG - Lower Flow"
     ],
     "filament_shrink": [
         "99.5%"
@@ -178,13 +178,13 @@
         "0"
     ],
     "filament_start_gcode": [
-        "; filament start gcode"
+        ""
     ],
     "filament_toolchange_delay": [
         "0"
     ],
     "filament_type": [
-        "PLA"
+        "PETG"
     ],
     "filament_unloading_speed": [
         "90"
@@ -193,7 +193,7 @@
         "100"
     ],
     "filament_vendor": [
-        "Jamg He"
+        "eSun"
     ],
     "filament_wipe": [
         "nil"
@@ -212,15 +212,15 @@
         "0"
     ],
     "hot_plate_temp": [
-        "60"
+        "75"
     ],
     "hot_plate_temp_initial_layer": [
-        "60"
+        "75"
     ],
     "idle_temperature": [
         "0"
     ],
-    "inherits": "Prusa Generic PLA",
+    "inherits": "Prusa Generic PETG",
     "internal_bridge_fan_speed": [
         "-1"
     ],
@@ -228,30 +228,30 @@
         "-1"
     ],
     "is_custom_defined": "0",
-    "name": "Jamg He PLA+",
+    "name": "eSun PETG - Lower Flow",
     "nozzle_temperature": [
-        "225"
+        "245"
     ],
     "nozzle_temperature_initial_layer": [
-        "225"
+        "245"
     ],
     "nozzle_temperature_range_high": [
-        "240"
+        "260"
     ],
     "nozzle_temperature_range_low": [
-        "200"
+        "220"
     ],
     "overhang_fan_speed": [
         "100"
     ],
     "overhang_fan_threshold": [
-        "50%"
+        "95%"
     ],
     "pellet_flow_coefficient": [
         "0.4157"
     ],
     "pressure_advance": [
-        "0.042"
+        "0.07"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
@@ -269,28 +269,28 @@
         "10"
     ],
     "supertack_plate_temp": [
-        "0"
+        "75"
     ],
     "supertack_plate_temp_initial_layer": [
-        "0"
+        "75"
     ],
     "support_material_interface_fan_speed": [
         "-1"
     ],
     "temperature_vitrification": [
-        "45"
+        "70"
     ],
     "textured_cool_plate_temp": [
-        "45"
+        "75"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "45"
+        "75"
     ],
     "textured_plate_temp": [
-        "60"
+        "75"
     ],
     "textured_plate_temp_initial_layer": [
-        "60"
+        "75"
     ],
     "version": "2.0.2.0"
 }
