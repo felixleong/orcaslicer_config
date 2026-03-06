@@ -27,7 +27,7 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*NOZZLE_CHC_TUN.*/",
+    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_STANDARD.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
