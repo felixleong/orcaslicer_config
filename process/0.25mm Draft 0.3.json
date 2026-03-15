@@ -250,7 +250,7 @@
     "support_interface_spacing": "0.36",
     "support_interface_speed": "40",
     "support_interface_top_layers": "3",
-    "support_ironing": "1",
+    "support_ironing": "0",
     "support_ironing_flow": "15%",
     "support_ironing_pattern": "rectilinear",
     "support_ironing_spacing": "0.1",

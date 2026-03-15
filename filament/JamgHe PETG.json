@@ -27,7 +27,7 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_STANDARD.*/",
+    "compatible_printers_condition": "nozzle_diameter[0]==0.6 and printer_notes=~/.*FLOW_STANDARD.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "8.5"
+        "9"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -163,7 +163,7 @@
         "JamgHe PETG"
     ],
     "filament_shrink": [
-        "99.7%"
+        "99.5%"
     ],
     "filament_shrinkage_compensation_z": [
         "100%"
@@ -230,10 +230,10 @@
     "is_custom_defined": "0",
     "name": "JamgHe PETG",
     "nozzle_temperature": [
-        "235"
+        "245"
     ],
     "nozzle_temperature_initial_layer": [
-        "235"
+        "245"
     ],
     "nozzle_temperature_range_high": [
         "260"

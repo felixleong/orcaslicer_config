@@ -33,7 +33,7 @@
     ],
     "nozzle_type": "brass",
     "print_host": "192.168.0.212",
-    "printer_notes": "PRINTER_MODEL_VORON0\nNOZZLE_DRAGON",
+    "printer_notes": "PRINTER_MODEL_VORON0\nHOTEND_DRAGON",
     "printer_settings_id": "xReservedx Voron 0.2 - 0.3 nozzle",
     "retract_when_changing_layer": [
         "0"
@@ -43,6 +43,7 @@
     ],
     "support_multi_bed_types": "1",
     "time_cost": "0.0435",
+    "time_lapse_gcode": "TIMELAPSE_TAKE_FRAME",
     "version": "2.3.1.10",
     "z_hop": [
         "0.2"

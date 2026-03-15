@@ -27,7 +27,7 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_STANDARD.*/",
+    "compatible_printers_condition": "nozzle_diameter[0]==0.6 and printer_notes=~/.*FLOW_STANDARD.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.94"
+        "0.96"
     ],
     "filament_is_support": [
         "0"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "9"
+        "10"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -163,7 +163,7 @@
         "eSun PETG"
     ],
     "filament_shrink": [
-        "99.5%"
+        "98.72%"
     ],
     "filament_shrinkage_compensation_z": [
         "100%"

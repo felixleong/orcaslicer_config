@@ -1,5 +1,6 @@
 {
     "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE - [layer_num]::[layer_z]mm\nG92 E0\n",
+    "extruder_clearance_radius": "38",
     "from": "User",
     "inherits": "Voron 0.1 0.2 nozzle",
     "is_custom_defined": "0",
@@ -33,13 +34,14 @@
     ],
     "nozzle_type": "brass",
     "print_host": "192.168.0.212",
-    "printer_notes": "PRINTER_MODEL_VORON0\nNOZZLE_DRAGON_SF\nFLOW_STANDARD",
+    "printer_notes": "PRINTER_MODEL_VORON0\nHOTEND_DRAGON_SF\nFLOW_STANDARD",
     "printer_settings_id": "Voron 0.2 - 0.4 nozzle",
     "retraction_length": [
         "0.4"
     ],
     "support_multi_bed_types": "1",
     "time_cost": "0.0435",
+    "time_lapse_gcode": "TIMELAPSE_TAKE_FRAME",
     "version": "2.3.1.10",
     "z_hop": [
         "0.2"

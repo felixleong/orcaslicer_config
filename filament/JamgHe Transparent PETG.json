@@ -27,7 +27,7 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_STANDARD.*/",
+    "compatible_printers_condition": "nozzle_diameter[0]==0.6 and printer_notes=~/.*FLOW_STANDARD.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
@@ -163,7 +163,7 @@
         "JamgHe Transparent PETG"
     ],
     "filament_shrink": [
-        "100%"
+        "99.5%"
     ],
     "filament_shrinkage_compensation_z": [
         "100%"

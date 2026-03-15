@@ -6,13 +6,13 @@
         "0"
     ],
     "adaptive_pressure_advance": [
-        "0"
+        "1"
     ],
     "adaptive_pressure_advance_bridges": [
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0,0,0\n0,0,0"
+        "0.015,4.80,2000\n0.020,8.41,2000\n0.022,10.8,2000\n0.022,14.4,2000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -27,17 +27,17 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_STANDARD.*/",
+    "compatible_printers_condition": "nozzle_diameter[0]==0.6 and printer_notes=~/.*FLOW_STANDARD.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
         "70"
     ],
     "cool_plate_temp": [
-        "80"
+        "95"
     ],
     "cool_plate_temp_initial_layer": [
-        "80"
+        "95"
     ],
     "default_filament_colour": [
         "#0080FF"
@@ -55,10 +55,10 @@
         "1"
     ],
     "eng_plate_temp": [
-        "80"
+        "95"
     ],
     "eng_plate_temp_initial_layer": [
-        "80"
+        "95"
     ],
     "fan_cooling_layer_time": [
         "30"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.95"
+        "0.96"
     ],
     "filament_is_support": [
         "0"
@@ -145,7 +145,7 @@
         "nil"
     ],
     "filament_retract_when_changing_layer": [
-        "nil"
+        "0"
     ],
     "filament_retraction_distances_when_cut": [
         "nil"
@@ -196,7 +196,7 @@
         "Fabxibble"
     ],
     "filament_wipe": [
-        "nil"
+        "0"
     ],
     "filament_wipe_distance": [
         "nil"
@@ -212,10 +212,10 @@
         "0"
     ],
     "hot_plate_temp": [
-        "80"
+        "95"
     ],
     "hot_plate_temp_initial_layer": [
-        "80"
+        "95"
     ],
     "idle_temperature": [
         "0"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.038"
+        "0.02"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
@@ -269,10 +269,10 @@
         "10"
     ],
     "supertack_plate_temp": [
-        "0"
+        "95"
     ],
     "supertack_plate_temp_initial_layer": [
-        "0"
+        "95"
     ],
     "support_material_interface_fan_speed": [
         "-1"
@@ -281,16 +281,16 @@
         "110"
     ],
     "textured_cool_plate_temp": [
-        "80"
+        "95"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "80"
+        "95"
     ],
     "textured_plate_temp": [
-        "80"
+        "95"
     ],
     "textured_plate_temp_initial_layer": [
-        "80"
+        "95"
     ],
     "version": "2.0.2.0"
 }

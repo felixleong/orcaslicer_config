@@ -12,7 +12,7 @@
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0.030,1.20,500\n0.037,3.60,500\n0.040,6.00,500\n0.045,8.41,500"
+        "0.027,4.95,2000\n0.025,8.67,2000\n0.024,11.1,2000\n0.020,14.9,2000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -27,20 +27,20 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_LOWER.*/",
+    "compatible_printers_condition": "nozzle_diameter[0]==0.6 and printer_notes=~/.*FLOW_STANDARD.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
         "70"
     ],
     "cool_plate_temp": [
-        "70"
+        "95"
     ],
     "cool_plate_temp_initial_layer": [
-        "70"
+        "95"
     ],
     "default_filament_colour": [
-        "#000000"
+        "#868686"
     ],
     "dont_slow_down_outer_wall": [
         "0"
@@ -55,10 +55,10 @@
         "1"
     ],
     "eng_plate_temp": [
-        "70"
+        "95"
     ],
     "eng_plate_temp_initial_layer": [
-        "70"
+        "95"
     ],
     "fan_cooling_layer_time": [
         "30"
@@ -82,7 +82,7 @@
         "60"
     ],
     "filament_density": [
-        "1.06"
+        "1.04"
     ],
     "filament_deretraction_speed": [
         "nil"
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.98"
+        "0.97"
     ],
     "filament_is_support": [
         "0"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "7"
+        "11"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -145,7 +145,7 @@
         "nil"
     ],
     "filament_retract_when_changing_layer": [
-        "nil"
+        "0"
     ],
     "filament_retraction_distances_when_cut": [
         "nil"
@@ -160,10 +160,10 @@
         "nil"
     ],
     "filament_settings_id": [
-        "SunLu Easy ABS - Lower Flow"
+        "Kexcelled ABS"
     ],
     "filament_shrink": [
-        "99.15%"
+        "99.3%"
     ],
     "filament_shrinkage_compensation_z": [
         "100%"
@@ -193,10 +193,10 @@
         "100"
     ],
     "filament_vendor": [
-        "SunLu"
+        "Kexcelled"
     ],
     "filament_wipe": [
-        "nil"
+        "0"
     ],
     "filament_wipe_distance": [
         "nil"
@@ -212,10 +212,10 @@
         "0"
     ],
     "hot_plate_temp": [
-        "70"
+        "95"
     ],
     "hot_plate_temp_initial_layer": [
-        "70"
+        "95"
     ],
     "idle_temperature": [
         "0"
@@ -228,12 +228,12 @@
         "-1"
     ],
     "is_custom_defined": "0",
-    "name": "SunLu Easy ABS - Lower Flow",
+    "name": "Kexcelled ABS",
     "nozzle_temperature": [
-        "250"
+        "245"
     ],
     "nozzle_temperature_initial_layer": [
-        "250"
+        "245"
     ],
     "nozzle_temperature_range_high": [
         "280"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.04"
+        "0.025"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
@@ -269,10 +269,10 @@
         "10"
     ],
     "supertack_plate_temp": [
-        "70"
+        "95"
     ],
     "supertack_plate_temp_initial_layer": [
-        "70"
+        "95"
     ],
     "support_material_interface_fan_speed": [
         "-1"
@@ -281,16 +281,16 @@
         "110"
     ],
     "textured_cool_plate_temp": [
-        "70"
+        "95"
     ],
     "textured_cool_plate_temp_initial_layer": [
-        "70"
+        "95"
     ],
     "textured_plate_temp": [
-        "70"
+        "95"
     ],
     "textured_plate_temp_initial_layer": [
-        "70"
+        "95"
     ],
     "version": "2.0.2.0"
 }

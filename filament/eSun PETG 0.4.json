@@ -12,7 +12,7 @@
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0.060,5.91,800\n0.060,8.27,800\n0.052,11.8,800\n0.055,5.91,1000\n0.055,8.27,1000\n0.055,11.8,1000\n0.080,7.12,2000\n0.075,10.7,2000\n0.065,14.3,2000"
+        "0.060,5.91,800\n0.060,8.27,800\n0.052,11.8,800\n0.055,5.91,1000\n0.055,8.27,1000\n0.055,11.8,1000\n0.075,7.12,2000\n0.070,10.7,2000\n0.065,14.3,2000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -27,7 +27,7 @@
         "3"
     ],
     "compatible_printers": [],
-    "compatible_printers_condition": "nozzle_diameter[0]>=0.4 and printer_notes=~/.*FLOW_LOWER.*/",
+    "compatible_printers_condition": "nozzle_diameter[0]==0.4 and printer_notes=~/.*FLOW_STANDARD.*/",
     "compatible_prints": [],
     "compatible_prints_condition": "",
     "complete_print_exhaust_fan_speed": [
@@ -94,7 +94,7 @@
         "; filament end gcode\n"
     ],
     "filament_flow_ratio": [
-        "0.94"
+        "1.03"
     ],
     "filament_is_support": [
         "0"
@@ -109,7 +109,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "7"
+        "4.5"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -160,7 +160,7 @@
         "nil"
     ],
     "filament_settings_id": [
-        "eSun PETG - Lower Flow"
+        "eSun PETG 0.4"
     ],
     "filament_shrink": [
         "99.5%"
@@ -228,12 +228,12 @@
         "-1"
     ],
     "is_custom_defined": "0",
-    "name": "eSun PETG - Lower Flow",
+    "name": "eSun PETG 0.4",
     "nozzle_temperature": [
-        "245"
+        "250"
     ],
     "nozzle_temperature_initial_layer": [
-        "245"
+        "250"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,7 +251,7 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.07"
+        "0.065"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
