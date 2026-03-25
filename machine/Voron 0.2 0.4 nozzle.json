@@ -2,27 +2,31 @@
     "adaptive_bed_mesh_margin": "0",
     "auxiliary_fan": "0",
     "bbl_use_printhost": "0",
-    "bed_custom_model": "C:\\\\Program Files\\\\OrcaSlicer\\\\resources\\\\profiles\\\\Prusa\\\\mk3_bed.stl",
-    "bed_custom_texture": "C:\\\\Program Files\\\\OrcaSlicer\\\\resources\\\\profiles\\\\Prusa\\\\mk3.5.svg",
-    "bed_exclude_area": [],
-    "bed_mesh_max": "250,210",
-    "bed_mesh_min": "0,-2",
-    "bed_mesh_probe_distance": "23,4",
+    "bed_custom_model": "C:\\\\Program Files\\\\OrcaSlicer\\\\resources\\\\profiles\\\\Voron\\\\Voron_120_build_plate.stl",
+    "bed_custom_texture": "C:\\\\Program Files\\\\OrcaSlicer\\\\resources\\\\profiles\\\\Voron\\\\voron_logo.svg",
+    "bed_exclude_area": [
+        "0x0"
+    ],
+    "bed_mesh_max": "99999,99999",
+    "bed_mesh_min": "-99999,-99999",
+    "bed_mesh_probe_distance": "50,50",
     "bed_temperature_formula": "by_highest_temp",
-    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE -  [layer_num]::[layer_z]mm\nG92 E0",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE - [layer_num]::[layer_z]mm\nG92 E0\n",
     "best_object_pos": "0.5,0.5",
     "change_extrusion_role_gcode": "",
-    "change_filament_gcode": "M600",
+    "change_filament_gcode": "",
     "cooling_tube_length": "5",
     "cooling_tube_retraction": "91.5",
     "default_bed_type": "",
-    "default_filament_profile": [],
+    "default_filament_profile": [
+        "Generic PLA @System"
+    ],
     "default_nozzle_volume_type": [
         "Standard"
     ],
-    "default_print_profile": "",
+    "default_print_profile": "0.20mm Standard @Voron",
     "deretraction_speed": [
-        "35"
+        "30"
     ],
     "disable_m73": "0",
     "emit_machine_limits_to_gcode": "1",
@@ -30,11 +34,11 @@
     "enable_long_retraction_when_cut": "0",
     "enable_power_loss_recovery": "printer_configuration",
     "extra_loading_move": "-2",
-    "extruder_clearance_height_to_lid": "120",
-    "extruder_clearance_height_to_rod": "40",
-    "extruder_clearance_radius": "40",
+    "extruder_clearance_height_to_lid": "140",
+    "extruder_clearance_height_to_rod": "36",
+    "extruder_clearance_radius": "38",
     "extruder_colour": [
-        ""
+        "#FCE94F"
     ],
     "extruder_offset": [
         "0x0"
@@ -54,43 +58,43 @@
     "fan_speedup_time": "0",
     "file_start_gcode": "",
     "from": "User",
-    "gcode_flavor": "reprapfirmware",
+    "gcode_flavor": "klipper",
     "grab_length": [
         "0"
     ],
     "head_wrap_detect_zone": [],
     "high_current_on_filament_swap": "0",
-    "host_type": "duet",
+    "host_type": "octoprint",
     "inherits": "",
     "layer_change_gcode": ";AFTER_LAYER_CHANGE - [layer_num]::[layer_z]mm",
     "long_retractions_when_cut": [
         "0"
     ],
-    "machine_end_gcode": "M98 P\"/macros/SetupPrint/PRINT_END\" Z{max_layer_z}\n; max_layer_z = [max_layer_z]",
+    "machine_end_gcode": "PRINT_END",
     "machine_load_filament_time": "0",
     "machine_max_acceleration_e": [
         "5000",
         "5000"
     ],
     "machine_max_acceleration_extruding": [
-        "2000",
-        "2000"
+        "3000",
+        "20000"
     ],
     "machine_max_acceleration_retracting": [
-        "2000",
-        "1250"
+        "3000",
+        "5000"
     ],
     "machine_max_acceleration_travel": [
-        "3000",
-        "3000"
+        "20000",
+        "20000"
     ],
     "machine_max_acceleration_x": [
-        "2000",
-        "1000"
+        "3000",
+        "20000"
     ],
     "machine_max_acceleration_y": [
-        "2000",
-        "1000"
+        "3000",
+        "20000"
     ],
     "machine_max_acceleration_z": [
         "500",
@@ -101,24 +105,23 @@
         "2.5"
     ],
     "machine_max_jerk_x": [
-        "10",
-        "10"
+        "12",
+        "12"
     ],
     "machine_max_jerk_y": [
-        "10",
-        "10"
+        "12",
+        "12"
     ],
     "machine_max_jerk_z": [
         "0.2",
         "0.4"
     ],
     "machine_max_junction_deviation": [
-        "0",
-        "0"
+        "0.01"
     ],
     "machine_max_speed_e": [
-        "120",
-        "120"
+        "25",
+        "25"
     ],
     "machine_max_speed_x": [
         "500",
@@ -140,23 +143,23 @@
         "0",
         "0"
     ],
-    "machine_pause_gcode": "M226",
-    "machine_start_gcode": "M98 P\"/macros/SetupPrint/PRINT_START\" E[first_layer_temperature] B[first_layer_bed_temperature] F\"{filament_type[0]}\" T\"[curr_bed_type]\" C\"{first_layer_print_min[0]},{first_layer_print_max[0]},{first_layer_print_min[1]},{first_layer_print_max[1]}\"",
+    "machine_pause_gcode": "PAUSE",
+    "machine_start_gcode": "PRINT_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[bed_temperature_initial_layer_single]  NOZZLE_DIAMETER={nozzle_diameter[0]} FILAMENT={filament_type[0]} BED_TYPE='{curr_bed_type}'\n; You can use following code instead if your PRINT_START macro support Chamber and print area bedmesh\n; PRINT_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[bed_temperature_initial_layer_single]  FILAMENT={filament_type[0]}\" BED_TYPE=\"{curr_bed_type} Chamber=[chamber_temperature] PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}",
     "machine_tool_change_time": "0",
     "machine_unload_filament_time": "0",
-    "manual_filament_change": "1",
+    "manual_filament_change": "0",
     "master_extruder_id": "1",
     "max_layer_height": [
-        "0.45"
+        "0.32"
     ],
     "max_resonance_avoidance_speed": "120",
     "min_layer_height": [
-        "0.15"
+        "0.1"
     ],
     "min_resonance_avoidance_speed": "70",
-    "name": "Prusa MK2X Duet 0.6 nozzle",
+    "name": "Voron 0.2 0.4 nozzle",
     "nozzle_diameter": [
-        "0.6"
+        "0.4"
     ],
     "nozzle_flush_dataset": [
         "0"
@@ -164,7 +167,7 @@
     "nozzle_height": "2.5",
     "nozzle_hrc": "0",
     "nozzle_type": [
-        "hardened_steel"
+        "brass"
     ],
     "nozzle_volume": [
         "0"
@@ -175,15 +178,15 @@
         "0"
     ],
     "preferred_orientation": "0",
-    "print_host": "192.168.0.202",
+    "print_host": "192.168.0.212",
     "print_host_webui": "",
     "printable_area": [
         "0x0",
-        "250x0",
-        "250x210",
-        "0x210"
+        "120x0",
+        "120x120",
+        "0x120"
     ],
-    "printable_height": "200",
+    "printable_height": "120",
     "printer_agent": "",
     "printer_extruder_id": [
         "1"
@@ -191,12 +194,12 @@
     "printer_extruder_variant": [
         "Direct Drive Standard"
     ],
-    "printer_model": "",
-    "printer_notes": "PRINTER_MODEL_MK2X\nHOTEND_CHC_TUN\nFLOW_HF",
-    "printer_settings_id": "Prusa MK2X Duet 0.6 nozzle",
+    "printer_model": "Voron 0.1",
+    "printer_notes": "PRINTER_MODEL_VORON0\nHOTEND_DRAGON_HF\nFLOW_HF",
+    "printer_settings_id": "Voron 0.2 0.4 nozzle",
     "printer_structure": "undefine",
     "printer_technology": "FFF",
-    "printer_variant": "",
+    "printer_variant": "0.4",
     "printhost_apikey": "",
     "printhost_authorization_type": "key",
     "printhost_cafile": "",
@@ -208,10 +211,10 @@
     "purge_in_prime_tower": "1",
     "resonance_avoidance": "0",
     "retract_before_wipe": [
-        "100%"
+        "70%"
     ],
     "retract_length_toolchange": [
-        "10"
+        "2"
     ],
     "retract_lift_above": [
         "0"
@@ -229,19 +232,19 @@
         "0"
     ],
     "retract_when_changing_layer": [
-        "0"
+        "1"
     ],
     "retraction_distances_when_cut": [
         "18"
     ],
     "retraction_length": [
-        "0.35"
+        "0.4"
     ],
     "retraction_minimum_travel": [
-        "6"
+        "1"
     ],
     "retraction_speed": [
-        "35"
+        "30"
     ],
     "scan_first_layer": "0",
     "silent_mode": "0",
@@ -253,15 +256,15 @@
     "template_custom_gcode": "",
     "thumbnails": "48x48/PNG, 300x300/PNG",
     "thumbnails_format": "PNG",
-    "time_cost": "0.0667",
-    "time_lapse_gcode": "",
+    "time_cost": "0.0435",
+    "time_lapse_gcode": "TIMELAPSE_TAKE_FRAME",
     "travel_slope": [
         "3"
     ],
     "upward_compatible_machine": [],
     "use_firmware_retraction": "0",
     "use_relative_e_distances": "1",
-    "version": "2.0.2.0",
+    "version": "2.3.1.10",
     "wipe": [
         "1"
     ],
@@ -273,10 +276,10 @@
     "wrapping_detection_layers": "20",
     "wrapping_exclude_area": [],
     "z_hop": [
-        "0.3"
+        "0.2"
     ],
     "z_hop_types": [
-        "Auto Lift"
+        "Normal Lift"
     ],
     "z_offset": "0"
 }
