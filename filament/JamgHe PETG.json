@@ -12,7 +12,7 @@
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0.122,4.779,500\n0.076,9.362,500\n0.063,10.75,500\n0.077,5.88,800\n0.075,8.23,800\n0.072,11.8,800\n0.082,5.88,1000\n0.082,8.23,1000\n0.077,11.8,1000"
+        "0.122,4.779,500\n0.076,9.362,500\n0.063,10.75,500\n0.077,5.88,800\n0.075,8.23,800\n0.072,11.8,800\n0.082,5.88,1000\n0.082,8.23,1000\n0.077,11.8,1000\n0.068,7.28,2000\n0.058,10.9,2000\n0.043,14.6,2000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -69,6 +69,15 @@
     "fan_min_speed": [
         "20"
     ],
+    "filament_adaptive_volumetric_speed": [
+        "0"
+    ],
+    "filament_adhesiveness_category": [
+        "0"
+    ],
+    "filament_change_length": [
+        "10"
+    ],
     "filament_cooling_final_speed": [
         "3.4"
     ],
@@ -93,8 +102,29 @@
     "filament_end_gcode": [
         "; filament end gcode\n"
     ],
+    "filament_extruder_variant": [
+        "Direct Drive Standard"
+    ],
     "filament_flow_ratio": [
-        "0.93"
+        "0.965"
+    ],
+    "filament_flush_temp": [
+        "0"
+    ],
+    "filament_flush_volumetric_speed": [
+        "0"
+    ],
+    "filament_ironing_flow": [
+        "nil"
+    ],
+    "filament_ironing_inset": [
+        "nil"
+    ],
+    "filament_ironing_spacing": [
+        "nil"
+    ],
+    "filament_ironing_speed": [
+        "nil"
     ],
     "filament_is_support": [
         "0"
@@ -109,7 +139,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "9"
+        "8"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -125,6 +155,9 @@
     ],
     "filament_notes": [
         ""
+    ],
+    "filament_printable": [
+        "3"
     ],
     "filament_ramming_parameters": [
         "120 100 6.6 6.8 7.2 7.6 7.9 8.2 8.7 9.4 9.9 10.0| 0.05 6.6 0.45 6.8 0.95 7.8 1.45 8.3 1.95 9.7 2.45 10 2.95 7.6 3.45 7.6 3.95 7.6 4.45 7.6 4.95 7.6"
@@ -183,6 +216,21 @@
     "filament_toolchange_delay": [
         "0"
     ],
+    "filament_tower_interface_pre_extrusion_dist": [
+        "10"
+    ],
+    "filament_tower_interface_pre_extrusion_length": [
+        "0"
+    ],
+    "filament_tower_interface_print_temp": [
+        "-1"
+    ],
+    "filament_tower_interface_purge_volume": [
+        "20"
+    ],
+    "filament_tower_ironing_area": [
+        "4"
+    ],
     "filament_type": [
         "PETG"
     ],
@@ -227,13 +275,15 @@
     "ironing_fan_speed": [
         "-1"
     ],
-    "is_custom_defined": "0",
+    "long_retractions_when_ec": [
+        "0"
+    ],
     "name": "JamgHe PETG",
     "nozzle_temperature": [
-        "245"
+        "250"
     ],
     "nozzle_temperature_initial_layer": [
-        "245"
+        "250"
     ],
     "nozzle_temperature_range_high": [
         "260"
@@ -251,13 +301,16 @@
         "0.4157"
     ],
     "pressure_advance": [
-        "0.077"
+        "0.055"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
     ],
     "required_nozzle_HRC": [
         "3"
+    ],
+    "retraction_distances_when_ec": [
+        "10"
     ],
     "slow_down_for_layer_cooling": [
         "1"
@@ -292,5 +345,8 @@
     "textured_plate_temp_initial_layer": [
         "75"
     ],
-    "version": "2.0.2.0"
+    "version": "2.0.2.0",
+    "volumetric_speed_coefficients": [
+        ""
+    ]
 }

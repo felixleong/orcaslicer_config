@@ -139,7 +139,7 @@
         "nil"
     ],
     "filament_max_volumetric_speed": [
-        "9.5"
+        "8"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -280,10 +280,10 @@
     ],
     "name": "JamgHe Transparent PETG",
     "nozzle_temperature": [
-        "225"
+        "250"
     ],
     "nozzle_temperature_initial_layer": [
-        "225"
+        "250"
     ],
     "nozzle_temperature_range_high": [
         "260"
