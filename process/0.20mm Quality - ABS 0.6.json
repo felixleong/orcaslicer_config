@@ -1,0 +1,15 @@
+{
+    "bottom_surface_pattern": "hilbertcurve",
+    "from": "User",
+    "inherits": "0.20mm Quality 0.6",
+    "internal_solid_infill_pattern": "archimedeanchords",
+    "name": "0.20mm Quality - ABS 0.6",
+    "print_extruder_id": [
+        "1"
+    ],
+    "print_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "print_settings_id": "0.20mm Quality - ABS 0.6",
+    "version": "2.0.2.0"
+}

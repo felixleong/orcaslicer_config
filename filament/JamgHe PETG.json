@@ -12,7 +12,7 @@
         "0"
     ],
     "adaptive_pressure_advance_model": [
-        "0.122,4.779,500\n0.076,9.362,500\n0.063,10.75,500\n0.077,5.88,800\n0.075,8.23,800\n0.072,11.8,800\n0.082,5.88,1000\n0.082,8.23,1000\n0.077,11.8,1000\n0.068,7.28,2000\n0.058,10.9,2000\n0.043,14.6,2000"
+        "0.122,4.779,500\n0.076,9.362,500\n0.063,10.75,500\n0.077,5.88,800\n0.075,8.23,800\n0.072,11.8,800\n0.082,5.88,1000\n0.082,8.23,1000\n0.077,11.8,1000\n0.066,7.28,2000\n0.056,10.9,2000\n0.041,14.6,2000"
     ],
     "adaptive_pressure_advance_overhangs": [
         "0"
@@ -106,7 +106,7 @@
         "Direct Drive Standard"
     ],
     "filament_flow_ratio": [
-        "0.965"
+        "0.945"
     ],
     "filament_flush_temp": [
         "0"
@@ -196,7 +196,7 @@
         "JamgHe PETG"
     ],
     "filament_shrink": [
-        "99.5%"
+        "100.24%"
     ],
     "filament_shrinkage_compensation_z": [
         "100%"
@@ -280,10 +280,10 @@
     ],
     "name": "JamgHe PETG",
     "nozzle_temperature": [
-        "250"
+        "245"
     ],
     "nozzle_temperature_initial_layer": [
-        "250"
+        "245"
     ],
     "nozzle_temperature_range_high": [
         "260"
